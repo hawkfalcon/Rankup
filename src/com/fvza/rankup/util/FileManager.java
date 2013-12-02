@@ -51,8 +51,6 @@ public class FileManager {
 		} catch (Exception ex) {
 			throw new IllegalArgumentException("Unable to load a configuration file. Make sure you did not use the tab key in your config.");
 		}
-		
-		Config Config = new Config(); 
 		Config.loadConfig( config ); 
 		Language.load( lang );
 	}

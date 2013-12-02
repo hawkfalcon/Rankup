@@ -7,14 +7,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import com.fvza.rankup.Ranking;
-import com.fvza.rankup.util.Config;
 import com.fvza.rankup.util.FileManager;
 import com.fvza.rankup.util.Language;
 
 public class Commands implements CommandExecutor {
 	
-	Ranking Ranking = new Ranking(); 
-	Config Config = new Config(); 
 	FileManager FileManager = new FileManager();
 
 	@Override

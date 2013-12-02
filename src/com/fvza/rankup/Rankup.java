@@ -21,6 +21,7 @@ public class Rankup extends JavaPlugin{
 	public static Economy econ = null;
 	
 	public static Plugin plugin;
+	public static FileManager fileManager;
 	
 	private boolean setupPermissions() {
         RegisteredServiceProvider<Permission> rsp = getServer().getServicesManager().getRegistration(Permission.class);
@@ -44,7 +45,7 @@ public class Rankup extends JavaPlugin{
 	@Override
     public void onEnable() {
 		
-		FileManager FileManager = new FileManager();
+		fileManager = new FileManager();
 		
 		PluginDescriptionFile pdfFile = this.getDescription();	
 		
@@ -57,7 +58,7 @@ public class Rankup extends JavaPlugin{
 		setupPermissions();
 		setupEconomy();
 		
-		FileManager.loadFiles(); 
+		fileManager.loadFiles(); 
 		
 		try {
 		    Metrics metrics = new Metrics(this);
