@@ -10,6 +10,8 @@ settings:
 #     price: 12.5
 #     default: false [NOT REQUIRED]
 #     broadcast: false [NOT REQUIRED]
+#     pay: 100.0 [NOT REQUIRED]
+# Pay is how much they are paid per hour if the pay plugin is installed.
 # Note, there's four spaces on sub-values.
 ranks:
     guest:
@@ -17,3 +19,4 @@ ranks:
         default: true
         broadcast: false
     member: 15000
+        pay: 100

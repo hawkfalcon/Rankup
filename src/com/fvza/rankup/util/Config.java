@@ -45,8 +45,13 @@ public class Config {
 						if (config.contains("ranks." + groupName + ".broadcast")) {
 							broadcast = config.getBoolean("ranks." + groupName + ".broadcast");
 						}
+						
+						double pay = 0.0;
+						if (config.contains("ranks." + groupName + ".pay")) {
+							pay = config.getDouble("ranks." + groupName + ".pay");
+						}
 
-						Group g = new Group(groupName, price, broadcast);
+						Group g = new Group(groupName, price, broadcast, pay);
 						Config.allGroups.put(groupName.toLowerCase(), g);
 					}
 					catch (Exception ex) {
