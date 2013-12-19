@@ -23,7 +23,7 @@ public class Language {
         broadcast = config.getString("rankup-success-broadcast");
 
         noMoney = config.getString("rankup-failed-money");
-        notRankable = config.getString("rankup-failed-next-group-not-allowed");
+        notRankable = config.getString("rankup-failed-not-allowed");
 
     }
 
